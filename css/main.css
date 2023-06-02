@@ -489,6 +489,20 @@
     overflow: hidden;
 }
 
+.main_product .product_slide figure {
+    padding: 0 5px;
+}
+
+.main_product .product_slide figure img {
+    height: 230px;
+    object-fit: cover;
+    margin: 0 0 10px 0;
+}
+
+.main_product .product_slide figure strong {
+    font-size: 12px;
+}
+
 @media (max-width: 768px) {
     .main_product .content {
         flex-direction: column;
@@ -496,7 +510,12 @@
 }
 
 .main_big_product {
+    position: relative;
     background: #f9f9f9;
+}
+
+.main_big_product .case {
+    overflow: hidden;
 }
 
 .main_big_product .product_slide2 {
@@ -505,6 +524,52 @@
 
 .main_big_product .product_slide2 figure {
     padding: 0 15px;
+}
+
+.main_big_product .arrows {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    display: flex;
+    justify-content: space-between;
+
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    width: 100%;
+
+    padding: 0 15px;
+}
+
+.main_big_product .arrows i {
+    padding: 20px 5px;
+    background: #fff;
+}
+
+.main_big_product .slick-dots {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.main_big_product .slick-dots li {
+    display: inline-block;
+}
+
+.main_big_product .slick-dots li button {
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.main_big_product .slick-dots li.slick-active button {
+    background: #333;
 }
 
 .to_top {

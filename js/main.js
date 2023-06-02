@@ -49,6 +49,8 @@ $(function () {
         asNavFor: ".pic_slide",
         focusOnSelect: true,
         arrows: false,
+        centerMode: true,
+        centerPadding: '20px',
         responsive: [
             {
                 breakpoint: 768,
@@ -62,6 +64,7 @@ $(function () {
     $('.product_slide2').slick({
         slidesToShow: 3,
         arrows: false,
+        dots: true,
         responsive: [
             {
                 breakpoint: 768,
@@ -70,6 +73,13 @@ $(function () {
                 }
             }
         ]
+    });
+
+    $('.main_big_product .arrows .left').on('click', function () {
+        $('.product_slide2').slick('slickPrev');
+    });
+    $('.main_big_product .arrows .right').on('click', function () {
+        $('.product_slide2').slick('slickNext');
     });
 
     $('.pic_slide').slick({
