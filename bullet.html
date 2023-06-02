@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        ul {
+            margin: 50px;
+        }
+
+        ul li {
+            position: relative;
+            padding: 0 0 0 50px;
+            margin: 0 0 30px 0;
+        }
+
+        ul li::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border: 3px solid #369;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        ul li:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            bottom: -20px;
+            left: 5px;
+            width: 1px;
+            background: #369;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li><a href="">mmmmenu01 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde adipisci laudantium
+                    inventore sunt cupiditate reiciendis? Veritatis, quisquam? Quaerat, neque quam hic placeat sapiente
+                    non earum odit corporis exercitationem, eaque eius officia maiores nisi animi aut expedita eum
+                    laboriosam, reiciendis distinctio aperiam dolorum! Tempora iste assumenda totam harum nisi quo dolor
+                    perferendis voluptate ipsa eius, vitae unde. Aspernatur, quae distinctio molestiae et, dicta saepe
+                    libero qui eligendi amet provident ut deserunt neque ad a aperiam labore! Facilis perspiciatis ipsum
+                    earum ipsa, culpa architecto eaque sed minus quisquam voluptate quasi, alias eos inventore eius non
+                    id illum ratione provident maiores? At, repellendus?</a></li>
+            <li><a href="">mmmmenu02</a></li>
+            <li><a href="">mmmmenu03</a></li>
+            <li><a href="">mmmmenu04</a></li>
+            <li><a href="">mmmmenu05</a></li>
+        </ul>
+    </section>
+</body>
+
+</html>
