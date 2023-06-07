@@ -44,6 +44,11 @@
     line-height: 19px;
 }
 
+.slick-track,
+.slick-slide {
+    transition-delay: 0.03s;
+}
+
 /* .header * {
     outline: 1px solid #ddd;
 } */
