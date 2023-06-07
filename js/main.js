@@ -93,6 +93,12 @@ $(function () {
         $('html, body').animate({ scrollTop: 0 }, 600)
     });
 
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        //sct > 1000 ? $('.to_top').fadeIn(1000) : $('.to_top').fadeOut();
+        sct > 1000 ? $('.to_top').addClass('on') : $('.to_top').removeClass('on');
+    });
+
     $('.scr').on('click', function (e) {
         e.preventDefault();
         const st = $(this.hash).offset().top;
@@ -104,8 +110,22 @@ $(function () {
         e.preventDefault();
         let idx = $(this).index();
         $('.history_content li').eq(idx).addClass('on').siblings().removeClass('on');
+    });
+
+
+    $('#fl').on('change', function () {
+        const lnk = $(this).val();
+        //console.log(lnk, ' 바뀌네~~~');
+        //val() 이 있을 떄만...        
+        // if (lnk) {
+        //     window.open(lnk);
+        // }
+        lnk && window.open(lnk);
+    });
+
+    $('.family_link2 span').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggleClass('on');
     })
-
-
 
 })
