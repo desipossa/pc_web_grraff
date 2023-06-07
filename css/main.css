@@ -225,6 +225,12 @@
 .main_visual .itm .btn {
     transform: translate(0, 100px);
     opacity: 0;
+
+}
+
+.main_visual .itm .btn i {
+    vertical-align: middle;
+    margin: 0 0 0 10px;
 }
 
 .main_visual .itm.on .btn {
@@ -243,7 +249,7 @@
 
 .main_visual .menu {
     position: absolute;
-    bottom: 200px;
+    bottom: 100px;
     left: 50%;
 
     display: flex;

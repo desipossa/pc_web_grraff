@@ -24,8 +24,10 @@ $(function () {
         autoplaySpeed: 5000,
         speed: 1000,
         pauseOnHover: false,
-        fade: true,
+        //fade: true,
         arrows: false,
+        //useCSS: false,
+        cssEase: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
     });
 
 
