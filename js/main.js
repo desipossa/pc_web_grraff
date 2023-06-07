@@ -126,6 +126,27 @@ $(function () {
     $('.family_link2 span').on('click', function () {
         $(this).toggleClass('on');
         $(this).next().toggleClass('on');
+    });
+
+    $('.portfolio_slide').on('init afterChange', function (e, s, c) {
+        console.log(c);
+        $('.main_portfolio .itm').eq(c).addClass('on')
+            .siblings().removeClass('on')
     })
+
+    $('.portfolio_slide').slick({
+        centerMode: true,
+        //centerPadding: "100px",
+        variableWidth: true,
+        arrows: false,
+        dots: true,
+    });
+
+    $('.main_portfolio .tab_arrows .left').on('click', function () {
+        $('.portfolio_slide').slick('slickPrev')
+    });
+    $('.main_portfolio .tab_arrows .right').on('click', function () {
+        $('.portfolio_slide').slick('slickNext')
+    });
 
 })
